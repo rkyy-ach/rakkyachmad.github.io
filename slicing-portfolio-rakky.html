@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio rky.</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+        .nav{
+            display:flex;
+            background-color: brown;
+            width: auto;
+            height: auto;
+            border-radius: 4px;
+        }
+        .logo{
+            padding: 15px;
+            margin: 2px;
+            width: 50px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .tombol-kontak{
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: brown;
+            border-radius: 5px;
+            text-align: center;
+            font-size: large;
+            padding-top: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .menu{
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            width: 300px;
+        }
+        .home{
+            width: 400px;
+            font-size: large;
+            text-align: center;
+            padding-top: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .portofolio{
+            width: 400px;
+            font-size: large;
+            text-align: center;
+            padding-top: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .about{
+            width: 400px;
+            font-size: large;
+            text-align: center;
+            padding-top: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .box1 h1 span{
+            color: brown;
+        }
+        .texthero{
+            margin-bottom: 50px;
+        }
+        .tombolhero{
+            color: white;
+            background-color: brown;
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            border-radius: 3px;
+            margin-top: 50px;
+        }
+        .gwej1{
+            width: 300px;
+            height: auto;
+        }
+        .box1{
+            width: 50%;
+        }
+        .box1 h1{
+            font-size: 80px;
+        }
+        .box2{
+            width: 50%;
+            padding: 10px;
+        }
+        .box2 img{
+            margin-left: 250px;
+            margin-top: 50px;
+            width: 400px;
+            height: auto;
+        }
+        .hero{
+            display: flex;
+            margin: 10px;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+        .skills-card{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .h1skills{
+            margin-bottom: 5px;
+        }
+        .card1{
+            background-color: brown;
+            width: 300px;
+            height: auto;
+            border-radius: 7px;
+            margin: 20px;
+        }
+        .logobola{
+            width: 60px;
+            height: auto;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .h3bola{
+            margin-left: 15px;
+            color: white;
+        }
+        .textbola{
+            padding: 15px;
+            color: white;
+        }
+        .card2{
+            background-color: brown;
+            width: 300px;
+            height: auto;
+            border-radius: 7px;
+            margin: 20px;
+        }
+        .logomasak{
+            width: 60px;
+            height: auto;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .h3masak{
+            margin-left: 15px;
+            color: white;
+        }
+        .textmasak{
+            padding: 15px;
+            color: white;
+        }
+        .card3{
+            background-color: brown;
+            width: 300px;
+            height: auto;
+            border-radius: 7px;
+            margin: 20px;
+        }
+        .logotravel{
+            width: 60px;
+            height: auto;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .h3travel{
+            margin-left: 15px;
+            color: white;
+        }
+        .texttravel{
+            padding: 15px;
+            color: white;
+        }
+        .card4{
+            background-color: brown;
+            width: 300px;
+            height: auto;
+            border-radius: 7px;
+            margin: 20px;
+        }
+        .logogame{
+            width: 60px;
+            height: auto;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        .h3game{
+            margin-left: 15px;
+            color: white;
+        }
+        .textgame{
+            padding: 15px;
+            color: white;
+        }
+        .textabout{
+            margin-bottom: 50px;
+        }
+        .gwej2{
+            width: 300px;
+            height: auto;
+            margin-left: 100px;
+        }
+        .boxabout1{
+            width: 50%;
+        }
+        .boxabout1 h1{
+            font-size: 80px;
+        }
+        .boxabout2{
+            width: 50%;
+            padding: 10px;
+        }
+        .boxabout2 img{
+            margin-left: 250px;
+            margin-top: 50px;
+            width: 400px;
+            height: auto;
+        }
+        .aboutme{
+            display: flex;
+            margin: 10px;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+        .abouttop{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navigasi -->
+    <header class="nav">
+        <img class="logo" src="RKY..png">
+        <ul class="menu">
+            <li class="home"><a href="#">Home</a></li>
+            <li class="portofolio"><a href="#">Portofolio</a></li>
+            <li class="about"><a href="#">About me</a></li>
+        </ul>
+        <a class="tombol-kontak" href="">Contact me</a>
+    </header>
+    <!-- hero -->
+    <div class="hero">
+        <div class="box1">
+            <p class="nama"><i>Hey. i'm Rakky</i></p>
+            <h1>Membangun <span>Website</span> impian anda dengan apa ya?</h1>
+            <p class="texthero">Namaku Rakky, aku lahir pada tanggal 7 Desember 2009,
+                tahun dimana akhir dari lahirnya anak-anak Gen Z, aku lahir di jambi,
+                aku bersekolah di pondok tahfizh abudzar, aku sedang belajar IT.
+            </p>
+            <a href="#" class="tombolhero">Menghubungi</a>
+        </div>
+        <div class="box2">
+            <img class="gwej1" src="gwej 3.jpg">
+
+        </div>
+    </div>
+        <p class="pskills"><i>My Hobby's</i></p>
+        <h1 class="h1skills">Hobi Saya punyaaa!</h1>
+    </div>
+    <!-- card -->
+    <div class="skills-card">
+        <div class="card1">
+            <img class="logobola" src="football-field (2).png">
+            <h3 class="h3bola">Sepak Bola</h3>
+            <p class="textbola">Saya suka bermain sepak bola sejak kecil hingga
+                sekarang, namun,permainan saya belum terlalu
+                bagus, sehingga saya sering kali di remehkan.
+                tapi saya tidak akan menyerah, saya akan mengasah
+                kemampuan saya!.
+            </p>
+        </div>
+        <div class="card2">
+            <img class="logomasak" src="cooking.png">
+            <h3 class="h3masak">Memasak</h3>
+            <p class="textmasak">Saya suka bermain bola sejak kecil hingga
+                sekarang, namun,permainan saya belum terlalu
+                bagus, sehingga saya sering kali di remehkan.
+                tapi saya tidak akan menyerah, saya akan mengasah
+                kemampuan saya!.
+            </p>
+        </div>
+        <div class="card3">
+            <img class="logotravel" src="traveling.png">
+            <h3 class="h3travel">Traveling</h3>
+            <p class="texttravel">Saya suka bermain bola sejak kecil hingga
+                sekarang, namun,permainan saya belum terlalu
+                bagus, sehingga saya sering kali di remehkan.
+                tapi saya tidak akan menyerah, saya akan mengasah
+                kemampuan saya!.
+            </p>
+        </div>
+        <div class="card4">
+            <img class="logogame" src="console.png">
+            <h3 class="h3game">Game</h3>
+            <p class="textgame">Saya suka bermain bola sejak kecil hingga
+                sekarang, namun,permainan saya belum terlalu
+                bagus, sehingga saya sering kali di remehkan.
+                tapi saya tidak akan menyerah, saya akan mengasah
+                kemampuan saya!.
+            </p>
+        </div>
+    </div>
+    <!-- about -->
+    <div class="aboutme">
+        <div class="boxabout2">
+            <img class="gwej2" src="gwej 2.jpg">
+        </div>
+        <div class="boxabout1">
+            <p class="abouttop"><i>About me</i></p>
+            <h1>Tentang saya</h1>
+            <p class="textabout">Namaku Rakky, aku lahir pada tanggal 7 Desember 2009,
+                tahun dimana akhir dari lahirnya anak-anak Gen Z, aku lahir di jambi,
+                aku bersekolah di pondok tahfizh abudzar, aku sedang belajar IT.
+            </p>
+        </div>
+    </div> 
+</body>
+</html>
